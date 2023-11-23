@@ -35,6 +35,23 @@ p {
     margin: 5px 0 20px 0;
 }
 
+button.normal {
+    padding: 14px 50px;
+    border-radius: 15px;
+    border: 0;
+    outline: 0;
+    background-color: #1a1a1a;
+    color: #d4d4d4;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.normal:hover {
+    color: rgb(252, 165, 84);
+    box-shadow: 5px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
 .section-p1 {
     padding: 40px 80px;
 }
@@ -138,7 +155,6 @@ body {
     color: rgb(0, 0, 0);
     border: 0;
     padding: 14px 80px 14px 80px;
-    background-repeat: no-repeat;
     cursor: pointer;
     font-weight: 700;
     font-size: 15px;
@@ -153,7 +169,7 @@ body {
 #hero-items {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px 40px;
+    padding: 30px 40px;
 }
 
 #features {
@@ -268,4 +284,71 @@ body {
     position: absolute;
     bottom: 20px;
     right: 10px;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('img/banner1.jpg');
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#banner h4 {
+    padding: 10px 0;
+    font-size: 16px;
+    color: rgb(252, 165, 84);
+    text-shadow: 0 0 3px rgba(0, 0, 0, 1), 0 0 3px rgba(0, 0, 0, 1);
+}
+
+#newsletter {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #606063;
+    width: 100%;
+    height: 20vh;
+}
+
+#newsletter h4 {
+    padding: 10px 0;
+    font-size: 25px;
+    color: rgb(252, 165, 84);
+}
+
+#newsletter p {
+    color: #332f2f;
+}
+
+#newsletter p span {
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+#newsletter .form {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+}
+
+#newsletter .form input {
+    width: 200px;
+    height: 50px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+}
+
+#newsletter .form button {
+    border-radius: 0 5px 5px 0;
+    height: 50px;
+}
+
+#newsletter .form input::placeholder {
+    color: #858484;
+    padding: 0 10px;
 }
