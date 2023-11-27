@@ -360,14 +360,15 @@ body {
     height: 50px;
     border-radius: 5px 0 0 5px;
     border: 0;
-}
-
-#newsletter .form button {
-    border-radius: 0 5px 5px 0;
-    height: 50px;
+    padding: 5px;
 }
 
 #newsletter .form input::placeholder {
     color: #858484;
     padding: 0 10px;
+}
+
+#newsletter .form button {
+    border-radius: 0 5px 5px 0;
+    height: 50px;
 }
