@@ -2,7 +2,7 @@
 
 @keyframes typing {
     from { width: 0 }
-    to { width: 70% }
+    to { width: 72% }
   }
 
 * {
@@ -203,9 +203,7 @@ button.normal:hover {
     border-right: .15em solid rgb(255, 255, 255);
     white-space: nowrap;
     width: 0;
-    animation: typing 3s;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+    animation: typing 2s steps(14, end) alternate infinite;
     font-size: 1.8em;
     font-weight: 600;
 }
