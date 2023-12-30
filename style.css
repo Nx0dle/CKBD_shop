@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&family=Outfit:wght@400;700&display=swap');
 
+@keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -63,10 +68,6 @@ button.normal:hover {
 
 .section-m1 {
     margin: 40px 0;
-}
-
-body {
-    width: 100%;
 }
 
 /* Navbar */
@@ -195,6 +196,18 @@ body {
     position: absolute;
     top: 37vh;
     left: 5vw;
+}
+
+.multi-text {
+    overflow: hidden;
+    border-right: .15em solid rgb(255, 255, 255);
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    font-size: 1.8em;
+    font-weight: 600;
 }
 
 #features {
